@@ -23,12 +23,15 @@ quit
 ```
 3. Run the following command to populate the database
 ```bash
-node seeds
+npm run seed
 ```
 4. Run the following command in your terminal to start the application
 ```bash
 node server.js
 ```
+## What it should look like
+You can view a video of the application [**>> here <<**](https://drive.google.com/file/d/1-aGkNfCoC9FRyYZHTOq0o_s3QQUyl44-/view). But this is what it should look like using [Insomnia](https://insomnia.rest/):
+![A screenshot of the desktop view](/public/assets/img/screenshot.png)
 ## Credits
 N/A
 ## License
