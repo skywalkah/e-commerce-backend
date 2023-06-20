@@ -39,7 +39,7 @@ node server.js
 ```
 8. Open [Insomnia](https://insomnia.rest/) or [Postman](https://www.postman.com/) to test routes
 ## What it should look like
-Video that demonstrates how to create the schema from the MySQL shell, seed the database from the command line and start the application’s server: [here](https://drive.google.com/file/d/1y1AVvJFtT17J4bk5N6yk7MwWK7VIZL1s/view)
+Video that demonstrates how to create the schema from the MySQL shell, seed the database from the command line and start the application’s server: [here](https://drive.google.com/file/d/1Nl-pjHliRihhY0yB1jTVCk6NJZI275NI/view)
 
 Video demonstrating all of the routes in Insomnia: [here](https://drive.google.com/file/d/1-aGkNfCoC9FRyYZHTOq0o_s3QQUyl44-/view). 
 
