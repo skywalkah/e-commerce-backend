@@ -12,13 +12,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 
 // sync sequelize models to the database, then turn on the server
-app.listen(PORT, () => {
-  console.log(`App listening on port ${PORT}!`);
-  sequelize.sync({ force: false }) // force: true will drop the table if it already exists
-    .then(() => {
-      console.log('Database & tables created!');
-    })
-    .catch(err => {
-      console.error('Unable to connect to the database:', err);
+sequelize.sync({ force: false }) // force: true will drop the table if it already exists
+  .then(() => {
+    console.log('Database & tables created!');
+    // Start the server here, after the DB sync is complete
+    app.listen(PORT, () => {
+      console.log(`App listening on port ${PORT}!`);
     });
-});
+  })
+  .catch(err => {
+    console.error('Unable to connect to the database:', err);
+  });
